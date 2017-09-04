@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSSgram</title>
+</head>
+<body>
+<aside class="sidebar">
+    <div class="filters__header">
+        <p class="filters__title">Фильтры</p>
+        <span class="filters__clean">Очистить</span>
+    </div>
+    <div class="filter">
+        <div class="filter__content">
+            <label for="contrast" class="filter__label">Контраст</label>
+            <p class="filter__value"></p>
+        </div>
+        <input id="contrast" class="filter__range" type="range" value="100" min="0" max="200" step="1">
+    </div>
+    <div class="filter">
+        <div class="filter__content">
+            <label for="brightness" class="filter__label">Яркость</label>
+            <p class="filter__value"></p>
+        </div>
+        <input id="brightness" class="filter__range" type="range" value="100" min="0" max="200" step="1">
+    </div>
+    <div class="filter">
+        <div class="filter__content">
+            <label for="saturate" class="filter__label">Насыщенность</label>
+            <p class="filter__value"></p>
+        </div>
+        <input id="saturate" class="filter__range" type="range" value="100" min="0" max="200" step="1">
+    </div>
+    <div class="filter">
+        <div class="filter__content">
+            <label for="sepia" class="filter__label">Сепия</label>
+            <p class="filter__value"></p>
+        </div>
+        <input id="sepia" class="filter__range" type="range" value="100" min="0" max="200" step="1">
+    </div>
+    <div class="filter">
+        <div class="filter__content">
+            <label for="grayscale" class="filter__label">оттенки серого</label>
+            <p class="filter__value"></p>
+        </div>
+        <input id="grayscale" class="filter__range" type="range" value="100" min="0" max="200" step="1">
+    </div>
+    <div class="filter">
+        <div class="filter__content">
+            <label for="invert" class="filter__label">Инвертировать</label>
+            <p class="filter__value"></p>
+        </div>
+        <input id="invert" class="filter__range" type="range" value="100" min="0" max="200" step="1">
+    </div>
+    <div class="filter">
+        <div class="filter__content">
+            <label for="hue-rotate" class="filter__label">Поворот цвета</label>
+            <p class="filter__value"></p>
+        </div>
+        <input id="hue-rotate" class="filter__range" type="range" value="100" min="0" max="200" step="1">
+    </div>
+    <div class="filter">
+        <div class="filter__content">
+            <label for="blur" class="filter__label">Размытие</label>
+            <p class="filter__value"></p>
+        </div>
+        <input id="blur" class="filter__range" type="range" value="100" min="0" max="200" step="1">
+    </div>
+</aside>
+<div class="wrap">
+    <div class="gallery">
+        <i class="icon-image"></i>
+        <label></label>
+        <input type="file">
+    </div>
+    <div class="filters"></div>
+</div>
+
+</body>
+</html>
