@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>CSSgram</title>
+    <link rel="stylesheet/less" href="less/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
 </head>
 <body>
 <aside class="sidebar">
@@ -69,11 +71,91 @@
 </aside>
 <div class="wrap">
     <div class="gallery">
-        <i class="icon-image"></i>
-        <label></label>
-        <input type="file">
+        <section class="download-image">
+            <i class="icon-image"></i>
+            <label for="download-image" class="download-image__label">Загрузить фото</label>
+            <input id="download-image" class="download-image__input" type="file">
+        </section>
+        <figure class="photo">
+            <div class="loaded photo__img">
+                <img src="img/img.jpg">
+            </div>
+        </figure>
     </div>
-    <div class="filters"></div>
+    <ul class="filter__items">
+        <li class="filter__item thumb">
+            <figure class="thumb__figure 1977">
+                <div style="content:'';display:block;height:100%;width:100%;top:0;left:0;pointer-events:none;position:absolute;mix-blend-mode:screen;opacity:1;background:rgba(243, 106, 188, 0.3);"></div>
+            </figure>
+            <p class="thumb__label">1977</p>
+        </li>
+        <li class="filter__item thumb">
+            <figure class="thumb__figure aden">
+                <div style="content:'';display:block;height:100%;width:100%;top:0;left:0;pointer-events:none;position:absolute;mix-blend-mode:darken;opacity:1;background:linear-gradient( to right, rgba(66, 10, 14, 0.2) 1%, rgba(66, 10, 14, 0) 100% );"></div>
+            </figure>
+            <p class="thumb__label">Aden</p>
+        </li>
+        <li class="filter__item thumb">
+            <figure class="thumb__figure brooklyn">
+                <div style="content:'';display:block;height:100%;width:100%;top:0;left:0;pointer-events:none;position:absolute;mix-blend-mode:overlay;opacity:1;background:-webkit-radial-gradient(center center, circle closest-corner, rgba(168, 223, 193, 0.4) 1%, rgba(183, 196, 200, 0.2) 100% );"></div>
+            </figure>
+            <p class="thumb__label">Brooklyn</p>
+        </li>
+        <li class="filter__item thumb">
+            <figure class="thumb__figure earlybird">
+                <div style="content:'';display:block;height:100%;width:100%;top:0;left:0;pointer-events:none;position:absolute;mix-blend-mode:overlay;opacity:1;background:-webkit-radial-gradient(undefined, circle undefined, rgba(208, 186, 142, 1) 20%, rgba(29, 2, 16, 0.2) 100% );"></div>
+            </figure>
+            <p class="thumb__label">Earlybird</p>
+        </li>
+        <li class="filter__item thumb">
+            <figure class="thumb__figure gingham">
+                <div style="content:'';display:block;height:100%;width:100%;top:0;left:0;pointer-events:none;position:absolute;mix-blend-mode:darken;opacity:1;background:linear-gradient( to right, rgba(66, 10, 14, 0.2) 1%, rgba(0, 0, 0, 0) 100% );"></div>
+            </figure>
+            <p class="thumb__label">Gingham</p>
+        </li>
+        <li class="filter__item thumb">
+            <figure class="thumb__figure hudson">
+                <div style="content:'';display:block;height:100%;width:100%;top:0;left:0;pointer-events:none;position:absolute;mix-blend-mode:multiply;opacity:0.5;background:-webkit-radial-gradient(undefined, circle undefined, rgba(255, 177, 166, 1) 50%, rgba(52, 33, 52, 1) 100% );"></div>
+            </figure>
+            <p class="thumb__label">Hudson</p>
+        </li>
+        <li class="filter__item thumb">
+            <figure class="thumb__figure inkwell">
+                <div style="content:'';display:block;height:100%;width:100%;top:0;left:0;pointer-events:none;position:absolute;opacity:1;background:rgba(0, 0, 0, 0);"></div>
+            </figure>
+            <p class="thumb__label">Inkwell</p>
+        </li>
+        <li class="filter__item thumb">
+            <figure class="thumb__figure lofi">
+                <div style="content:'';display:block;height:100%;width:100%;top:0;left:0;pointer-events:none;position:absolute;mix-blend-mode:multiply;opacity:1;background:-webkit-radial-gradient(undefined, circle undefined, rgba(0, 0, 0, 0) 70%, rgba(34, 34, 34, 1) 100% );"></div>
+            </figure>
+            <p class="thumb__label">Lofi</p>
+        </li>
+        <li class="filter__item thumb">
+            <figure class="thumb__figure perpetua">
+                <div style="content:'';display:block;height:100%;width:100%;top:0;left:0;pointer-events:none;position:absolute;mix-blend-mode:soft-light;opacity:0.5;background:linear-gradient( to bottom, rgba(0, 91, 154, 1) 1%, rgba(61, 193, 230, 0) 100% );"></div>
+            </figure>
+            <p class="thumb__label">Perpetua</p>
+        </li>
+        <li class="filter__item thumb">
+            <figure class="thumb__figure reyes">
+                <div style="content:'';display:block;height:100%;width:100%;top:0;left:0;pointer-events:none;position:absolute;mix-blend-mode:soft-light;opacity:0.5;background:rgba(173, 205, 239, 1);"></div>
+            </figure>
+            <p class="thumb__label">Reyes</p>
+        </li>
+        <li class="filter__item thumb">
+            <figure class="thumb__figure toaster">
+                <div style="content:'';display:block;height:100%;width:100%;top:0;left:0;pointer-events:none;position:absolute;mix-blend-mode:screen;opacity:0.5;background:-webkit-radial-gradient(undefined, circle undefined, rgba(15, 78, 128, 1) 1%, rgba(59, 0, 59, 1) 100% );"></div>
+            </figure>
+            <p class="thumb__label">Toaster</p>
+        </li>
+        <li class="filter__item thumb">
+            <figure class="thumb__figure walden">
+                <div style="content:'';display:block;height:100%;width:100%;top:0;left:0;pointer-events:none;position:absolute;mix-blend-mode:screen;opacity:0.3;background:rgba(204, 68, 0, 1);"></div>
+            </figure>
+            <p class="thumb__label">Walden</p>
+        </li>
+    </ul>
 </div>
 
 </body>

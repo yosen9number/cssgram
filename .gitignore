@@ -4,3 +4,7 @@
 
 gulpfile.js
 mode_modules/
+*.json
+package-lock.json
+node_modules/yargs/lib/usage.js
+debug.log
